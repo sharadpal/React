@@ -1,0 +1,28 @@
+// ----------------- IN app.jsx
+
+import "./App.css";
+import Title from "./Title.jsx";
+function Description(){
+  return <h3>I am the Descriptions!</h3>
+}
+
+function App() {
+  return (
+    <div>
+      <Title/>
+      <Description/>
+      <Title/>
+      <Description/>
+    </div>
+  );
+  
+}
+
+export default App;
+
+//-------------------------------- IN Title.jsx
+function Title(){
+  return <h1>I am the Title</h1>
+}
+
+export default Title;
