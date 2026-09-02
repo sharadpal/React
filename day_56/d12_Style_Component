@@ -1,0 +1,14 @@
+//------------------------Product.jsx(only import)
+
+import "./Product.css";
+
+//--------------------------Product.css
+
+.Product{
+    border:1px solid white;
+    border-radius: 24px;
+    margin-bottom:15px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0 15px 0 15px;
+}
