@@ -1,0 +1,26 @@
+//---------------------------- product.jsx
+
+import "./Product.css";
+function Product({title, price=1}) {
+    return (
+        <div className="Product">
+            <h3>{title}</h3>
+            <h5>Price: {price}</h5>
+        </div>
+    );
+}
+export default Product;
+
+//--------------------------------ProductTab.jsx
+
+import Product from "./Product.jsx";
+function ProductTab(){
+    return (
+        <>
+            <Product title="phone" price={30000} />
+            <Product title="laptop" price={40000} />
+            <Product title="pen" />
+        </>
+    );
+}
+export default ProductTab;
