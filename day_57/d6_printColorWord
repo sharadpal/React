@@ -1,0 +1,24 @@
+//----------------------------------- new component file- MsgBox.jsx
+
+export default function MsgBox({ userName,textColor }){
+    // let style= {color:textColor};
+    return(
+        <hi style= {{color:textColor}}>Hello, {userName}</hi>
+    )
+}
+
+//----------------------------------- --App.jsx
+
+import MsgBox from "./MsgBox";
+
+function App() {
+    return ( 
+        <>
+            <MsgBox userName="sharad" textColor="red" /> <br />
+            <MsgBox userName="How are you" textColor="blue" />
+            <ProductTab />
+        </>
+    );
+}
+
+export default App;
