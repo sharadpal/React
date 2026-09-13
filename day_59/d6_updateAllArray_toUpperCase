@@ -1,0 +1,9 @@
+    let upperCaseAll=()=>{
+        setTodos((todos)=>(
+            todos.map((todo)=>{
+            return {
+                ...todo,
+                task: todo.task.toUpperCase()
+            };
+        })));
+    };
