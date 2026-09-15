@@ -1,0 +1,41 @@
+//-----------------------------------------Lottery1.jsx
+
+import {useState} from "react";
+import "./Lottery.css";
+import { genTick } from "./helper";
+
+export default function Lottery1() {
+    let[ticket,setTicket]=useState(genTick(3));
+
+    return (
+        <div>
+            <h1> Lottery Game!</h1>
+            <div className="ticket">
+                <span>{ticket[0]}</span>
+                <span>{ticket[1]}</span>
+                <span>{ticket[2]}</span>
+            </div>
+
+        </div>
+    )
+}
+
+//-------------------------------------------------- helper.js
+
+function genTick(n) {
+    let arr=new Array(n)
+    for(let i=0;i<n;i++){
+        arr[i]=Math.floor(Math.random()*10);
+    }
+    return arr;
+}
+export {genTick};
+
+//-------------------------------------------------Lottery.css
+
+.ticket{
+    border: 1px solid pink;
+    border-radius: 14px;
+    margin-left: 330px;
+    margin-right: 330px;
+}
